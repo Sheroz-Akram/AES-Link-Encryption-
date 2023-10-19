@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Assets/crypto.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Enter Link That You want to Encrpt
+        let link = "";
+
+        // Enter Password Of Encrption
+        let password = "";
+
+        // Algorithm Works
+        const encryptedLink = CryptoJS.AES.encrypt(link, password).toString();
+
+        // Outputs the Encrpted Code
+        console.log("Encrpted Code: " + encryptedLink);
+
+    </script>
+</body>
+</html>
